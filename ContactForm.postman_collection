@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "b120cea6-d6ce-49c3-b6df-23c4348b0c0a",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllContactForms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/contact-forms",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"contact-forms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllRequestTypes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/request-types",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"request-types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllRequestTypesDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/request-types/details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"request-types",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createContactForm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"requestType\": \"requestTypessss\",\r\n    \"policyNumber\": \"policyNumbersadas\",\r\n    \"name\": \"nameaads\",\r\n    \"surname\": \"surnameasd\",\r\n    \"requestText\": \"requestTextasdasd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/contact-forms/contact-form",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"contact-forms",
+						"contact-form"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createRequestType",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"requestType\": \"Complaint\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/request-types/request-type",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"request-types",
+						"request-type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSpecificContactForm",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/contact-forms/contact-form/604b82cad6571f6b94a23ac1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"contact-forms",
+						"contact-form",
+						"604b82cad6571f6b94a23ac1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSpecificRequesteType",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/request-types/request-type/604b8608d6571f6b94a23ac2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"request-types",
+						"request-type",
+						"604b8608d6571f6b94a23ac2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteSpecificRequesteType",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/request-types/request-type/604b9c9b327a4d7c6239998c",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"request-types",
+						"request-type",
+						"604b9c9b327a4d7c6239998c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteSpecificContactForm",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/contact-forms/contact-form/604d251300352b233a0fdf08",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"contact-forms",
+						"contact-form",
+						"604d251300352b233a0fdf08"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

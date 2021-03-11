@@ -1,0 +1,10 @@
+# Spring properties
+spring:
+  application:
+    name: car-service
+  data:
+    mongodb.host: localhost
+    mongodb.port: 32769
+    mongodb.uri: mongodb+srv://${dbaccount}:${dbpassword}@cluster0.np7uu.mongodb.net/${dbname}?retryWrites=true&w=majority
+    mongo.repositories.enabled: true
+    spring.data.mongodb.host: mongodb
